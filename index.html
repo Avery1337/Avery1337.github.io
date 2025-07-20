@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardew Valley Farm Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stardew Valley Farm Planner</h1>
+
+    <div class="controls">
+        <div class="item-selection">
+            <h2>Select Item:</h2>
+            <div class="item-buttons">
+                <button data-item-type="regular-sprinkler" title="Regular Sprinkler">
+                    <img src="assets/regular_sprinkler.png" alt="Regular Sprinkler">
+                </button>
+                <button data-item-type="quality-sprinkler" title="Quality Sprinkler">
+                    <img src="assets/quality_sprinkler.png" alt="Quality Sprinkler">
+                </button>
+                <button data-item-type="iridium-sprinkler" title="Iridium Sprinkler">
+                    <img src="assets/iridium_sprinkler.png" alt="Iridium Sprinkler">
+                </button>
+
+                <button data-item-type="normal-scarecrow" title="Normal Scarecrow">
+                    <img src="assets/normal_scarecrow.png" alt="Normal Scarecrow">
+                </button>
+                <button data-item-type="deluxe-scarecrow" title="Deluxe Scarecrow">
+                    <img src="assets/deluxe_scarecrow.png" alt="Deluxe Scarecrow">
+                </button>
+            </div>
+            <p>Currently selected: <span id="current-selection">None</span></p>
+            </div>
+
+        <div class="grid-actions">
+            <button id="clear-all-items">Clear All Items</button>
+        </div>
+
+        <div class="statistics">
+            <h2>Statistics:</h2>
+            <p>Total Watered Tiles: <span id="total-watered-count">0</span></p>
+            <p>Watered & Protected Tiles: <span id="watered-protected-count">0</span></p>
+        </div>
+    </div>
+
+    <div class="farm-grid" id="farm-grid">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
