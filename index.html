@@ -30,11 +30,14 @@
                     <img src="assets/deluxe_scarecrow.png" alt="Deluxe Scarecrow">
                 </button>
             </div>
-            <p>Currently selected: <span id="current-selection">None</span></p>
             </div>
 
         <div class="grid-actions">
+            <label for="pressure-nozzle-toggle" class="nozzle-toggle-label">
+                <input type="checkbox" id="pressure-nozzle-toggle"> Apply Pressure Nozzles
+            </label>
             <button id="clear-all-items">Clear All Items</button>
+            <p class="instruction-text">Right-click (hold press on mobile) on a tile to clear it.</p>
         </div>
 
         <div class="statistics">
@@ -45,7 +48,27 @@
     </div>
 
     <div class="farm-grid" id="farm-grid">
+    </div>
+
+    ---
+
+    <div class="controls profile-controls-bottom">
+        <div class="profile-management">
+            <h2>Save/Load Profiles:</h2>
+            <div class="profile-input-group">
+                <input type="text" id="profile-name-input" placeholder="Enter profile name">
+                <button id="save-profile-btn">Save Profile</button>
+            </div>
+            <div class="profile-selection-group">
+                <select id="profile-select">
+                    <option value="">-- Select Profile --</option>
+                </select>
+                <button id="load-profile-btn">Load Profile</button>
+                <button id="delete-profile-btn" class="delete-btn">Delete Profile</button>
+            </div>
         </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
